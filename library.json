@@ -1,0 +1,30 @@
+{
+  "name": "audio",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "esp32",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewmherren/audio.git"
+  },
+  "authors": [
+    {
+      "name": "Andrew Herren",
+      "url": "https://github.com/andrwemherren"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/andrewmherren",
+  "frameworks": "*",
+  "platforms": [
+    "espressif32"
+  ],
+  "dependencies": {
+    "bblanchon/ArduinoJson": "^6.20.0",
+    "web_platform_interface": "https://github.com/andrewmherren/web_platform_interface.git#cpp_arduino",
+    "pschatzmann/arduino-audio-tools": "^0.9.6"
+  }
+}
