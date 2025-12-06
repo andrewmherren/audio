@@ -38,7 +38,11 @@ extern "C" void setUp(void) {
 extern "C" void tearDown(void) {
   // Reset platform instance to avoid static destructor order issues
   IWebPlatformProvider::instance = nullptr;
-  // Don't delete here - will be deleted in next setUp or at program end
+  // Delete the global provider to avoid memory leaks if a test fails between setUp and tearDown
+  if (globalProvider) {
+    delete globalProvider;
+    globalProvider = nullptr;
+  }
 }
 
 int main(int argc, char **argv) {
