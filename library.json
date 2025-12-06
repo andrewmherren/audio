@@ -1,6 +1,6 @@
 {
   "name": "audio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "keywords": [
     "esp32",
@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "bblanchon/ArduinoJson": "^6.20.0",
-    "web_platform_interface": "https://github.com/andrewmherren/web_platform_interface.git#cpp_arduino",
+    "web_platform_interface": "https://github.com/andrewmherren/web_platform_interface.git",
     "pschatzmann/arduino-audio-tools": "^0.9.6"
   }
 }
