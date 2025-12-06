@@ -118,3 +118,12 @@ AudioModule stream, equalizer, compressor, output;
 - [ ] Add inter-instance connection API
 - [ ] Test with 3+ simultaneous instances
 - [ ] Memory profiling with multiple instances
+
+## Related Projects
+
+- **[web_platform](https://github.com/andrewmherren/web_platform)**: Core WebPlatform implementation
+- **[web_platform_interface](https://github.com/andrewmherren/web_platform_interface)**: Core interface and testing library for WebPlatform ecosystem
+- **[maker_api](https://github.com/andrewmherren/maker_api)**: Interactive API explorer module
+- **[usb_pd_controller](https://github.com/andrewmherren/usb_pd_controller)**: USB-C Power Delivery control module
+- **[ota_update](https://github.com/andrewmherren/ota_update)**: Over-the-air firmware update module
+- **[web_module_example](https://github.com/andrewmherren/web_module_example)**: Boilerplate template for creating custom WebPlatform modules
