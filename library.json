@@ -1,7 +1,7 @@
 {
   "name": "audio",
   "version": "0.0.1",
-  "description": "",
+  "description": "Audio module for ESP32 with I2S playback and recording support",
   "keywords": [
     "esp32",
     "web"
@@ -13,7 +13,7 @@
   "authors": [
     {
       "name": "Andrew Herren",
-      "url": "https://github.com/andrwemherren"
+      "url": "https://github.com/andrewmherren"
     }
   ],
   "license": "MIT",

@@ -154,9 +154,14 @@ bool AudioModule::play(const String &source, int volume) {
     return playbackEngine->playFile(source);
   } else if (source.startsWith("tone:")) {
     // Test tone format: "tone:440" for 440Hz
-    float frequency = source.substring(5).toFloat();
-    if (frequency <= 0)
-      frequency = 440.0;
+    String freqStr = source.substring(5);
+    char *endptr = nullptr;
+    float frequency = strtof(freqStr.c_str(), &endptr);
+    // Check for parsing errors: empty, non-numeric, or not positive
+    if (freqStr.length() == 0 || endptr == freqStr.c_str() || *endptr != '\0' || frequency <= 0) {
+      Serial.println("Audio Module: Invalid tone frequency");
+      return false;
+    }
     return playbackEngine->playSineWave(frequency);
   } else {
     Serial.println("Audio Module: Unknown source type");
