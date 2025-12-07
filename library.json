@@ -1,0 +1,30 @@
+{
+  "name": "audio",
+  "version": "0.0.1",
+  "description": "Audio module for ESP32 with I2S playback and recording support",
+  "keywords": [
+    "esp32",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewmherren/audio.git"
+  },
+  "authors": [
+    {
+      "name": "Andrew Herren",
+      "url": "https://github.com/andrewmherren"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/andrewmherren",
+  "frameworks": "*",
+  "platforms": [
+    "espressif32"
+  ],
+  "dependencies": {
+    "bblanchon/ArduinoJson": "^6.20.0",
+    "web_platform_interface": "https://github.com/andrewmherren/web_platform_interface.git",
+    "pschatzmann/arduino-audio-tools": "^0.9.6"
+  }
+}
